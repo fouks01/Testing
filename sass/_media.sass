@@ -1,0 +1,289 @@
+@media (max-width: 1650px)
+  .main
+    height: 493px
+    &-image
+      max-width: 880px
+      overflow: hidden
+      &__hospital
+        max-width: 880px
+
+@media (max-width: 1490px)
+  .main
+    height: 100%
+    &-article
+      width: 880px
+      margin-top: 20px
+      &__title
+        width: 880px
+        margin: auto
+        text-align: center
+      &__subtitle
+        text-align: center
+    &-block
+      flex-wrap: wrap
+      justify-content: center
+    &-image
+      padding-top: 10px
+      order: -1
+      position: static
+      overflow: visible
+      &__hospital
+@media (max-width: 1200px)
+  .container
+    max-width: 970px
+
+@media (max-width: 992px)
+  .container
+    max-width: 758px
+  .footer
+    &-link
+      margin-right: 20px
+@media (max-width: 885px)
+  .mobile
+    &-fixed
+      position: fixed
+      top: 0
+      right: 0
+      left: 0
+      z-index: 99
+      background-color: white
+  .header
+    height: 75px
+    padding: 0
+  .address
+    &-street,
+    &-icon
+      display: none
+    &-city
+      display: none
+      &--mob
+        display: block
+        text-align: end
+  .appointment
+    display: none
+    &--menu
+      display: block
+  .main
+    padding-top: 79px
+    &-image
+      padding: 0
+      &__hospital
+        max-width: 100%
+    &-article
+      max-width: 100%
+      &__title
+        max-width: 100%
+      &__subtitle
+        max-width: 100%
+  .phone
+    &-whatsapp
+      display: none
+    &-tel
+      font-weight: 700
+  .logo
+    display: flex
+    &-block
+      &-1
+        margin-left: 35px
+  .menu
+    display: block
+    &-button
+      display: block
+      display: flex
+      width: 19px
+      height: 26px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      margin-top: 2px
+      margin-left: 17px
+      margin-right: 43px
+      &__line
+        display: block
+        width: 37px
+        height: 4px
+        background: #1FA181
+  .navbar
+    &-top
+      display: none
+@media (min-width: 768px)
+  .phone
+    &-tel
+      cursor: pointer
+      &:hover
+        color: red
+  .logo,
+  .footer
+    &-image
+      transition: transform 0.7s ease-in-out
+      cursor: pointer
+      &:hover
+        transform: scale(1.2)
+    &-instagram,
+    &-whatsapp,
+    &-telegram
+      transition: transform 0.7s ease-in-out
+      cursor: pointer
+      &:hover
+        transform: scale(1.2)
+    &-link
+      cursor: pointer
+      &:hover
+        color: red
+  .clinic
+    &-item
+      &__link
+        cursor: pointer
+        &:hover
+          color: red
+  .appointment
+    &:hover
+      background-color: #E2F0EF
+  .check
+    &-btn
+      &:hover
+        color: red
+    &-link
+      &:hover
+        color: red
+  .form
+    &-btn
+      &:hover
+        color: black
+        background-color: #E2F0EF
+  .popup
+    &-close
+      cursor: pointer
+
+@media (max-width: 768px)
+  .header
+    padding-top: 30px
+    padding-bottom: 30px
+  .main
+    &-article
+      &__title
+        font-size: 26px
+  .footer
+    &-block
+      justify-content: space-around
+    &-list
+      display: none
+  .mobile
+    &-list
+      width: 576px
+@media (max-width: 758px)
+  .header
+    background-color: #F7F7F7
+  .menu
+    &-button
+      background-color: #F7F7F7
+@media (max-width: 576px)
+  .main
+    &-article
+      &__title
+        text-align: start
+        max-width: 71%
+        margin: 0
+        margin-left: 17px
+        line-height: 40px
+      &__subtitle
+        text-align: start
+        margin-left: 17px
+        margin-right: 10px
+  .check
+    &-title
+      font-size: 32px
+      padding-left: 17px
+    &-subtitle
+      font-size: 18px
+      padding-left: 17px
+    &-item
+      font-size: 15px
+    &-list
+      padding-left: 34px
+    &-price
+      padding-left: 17px
+    &-btn
+      margin-left: 17px
+    &-link
+      margin-left: 17px
+  .mobile
+    &-list
+      width: 480px
+@media (max-width: 536px)
+  .check
+    &-btn
+      margin-bottom: 12px
+    &-btns
+      margin-top: 30px
+    &-link
+      display: block
+    &-block
+      &::before
+        height: 450px
+    &-title
+      padding-top: 30px
+  .popup
+    &-content
+      width: 460px
+      // z-index: 200
+@media (max-width: 480px)
+  .mobile
+    &-list
+      width: 320px
+  .popup
+    &-content
+      width: 310px
+@media (max-width: 408px)
+  .logo
+    &-block
+      &-1
+        margin-left: 17px
+    &-image
+      width: 62px
+    &-top
+      align-self: end
+  .phone
+    margin-right: 18px
+    &-tel
+      font-size: 16px
+  .address
+    &-city
+      &__mob
+        font-size: 13px
+  .main
+    background: #F8FBFA
+    &-image
+      &__hospital
+        height: 288px
+        object-fit: cover
+    &-article
+      &__title
+        line-height: 34px
+      &__subtitle
+        max-width: 340px
+  .menu
+    &-button
+      background: #F7F7F7
+
+// @media (max-width: 480px)
+@media (max-width: 340px)
+  .phone
+    &-tel
+      font-size: 13px
+
+@media (max-width: 320px)
+  .menu
+    &-button
+      margin-right: 26px
+  .main
+    &-article
+      &__title
+        font-size: 25px
+  .check
+    &-title
+      padding-top: 23px

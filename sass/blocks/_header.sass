@@ -1,0 +1,112 @@
+.header
+    display: flex
+    justify-content: space-between
+    padding-top: 15.62px
+.logo
+    align-self: center
+    margin-right: 24px
+    &-block
+        &-1
+            display: flex
+            justify-content: space-between
+        &-2
+            display: flex
+.address
+    display: flex
+    &-icon
+        margin-right: 6.65px
+    &-city
+        margin: 0
+        font-family: 'PT Sans Caption'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 21px
+        color: $title-text-color
+        &--mob
+            display: none
+    &-street
+        margin: 0
+        font-family: 'PT Sans Caption'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 21px
+        color: $address-color
+.phone
+    display: flex
+    align-self: center
+    margin-right: 35px
+    &-whatsapp
+        margin-right: 11px
+    &-tel
+        font-family: 'PT Sans Caption'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        color: $title-text-color
+        text-decoration: none
+    &-second
+        align-self: center
+.appointment
+    width: 196px
+    height: 43px
+    left: 1334px
+    top: 12px
+    background: $primary
+    border-radius: 50px
+    border: none
+    cursor: pointer
+    &--menu
+        margin-top: 39px
+        background: #F6F6F6
+    &-span
+        font-family: 'PT Sans Caption', sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 21px
+        color: $nav-text-color
+        &--menu
+            color: #1FA181
+.navbar
+    &-top
+        width: 100%
+        height: 43px
+        background-color: $primary
+.clinic
+    &-item
+        margin-right: 30px
+        margin-top: 8px
+        &__link
+            font-family: 'PT Sans Caption'
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            color: $nav-text-color
+            text-decoration: none
+            margin-top: 8px
+            padding: 0
+
+    &-list
+        display: flex
+        list-style-type: none
+        padding: 0
+.menu
+    display: none
+    &-button
+        display: none
+        &__line
+            display: none
+        &--active
+            transition: transform 0.25s
+            span:nth-child(1)
+                transform: rotate(45deg)
+                transform-origin: 2px 2px
+            span:nth-child(2)
+                display: none
+            span:nth-child(3)
+                transform: rotate(-45deg)
+                transform-origin: 3px 3px

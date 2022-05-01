@@ -1,0 +1,127 @@
+.check
+    padding-bottom: 101px
+    &-block
+        display: none
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            background-repeat: no-repeat
+            background-image: url(../img/check-img.png)
+            z-index: -1
+            top:
+            bottom:
+            right:
+            left:
+            width: 100%
+            height: 100%
+            background-size: auto
+        &--active
+            display: block
+    &-title
+        font-family: 'PT Sans Caption'
+        font-style: normal
+        font-weight: 700
+        font-size: 38px
+        line-height: 49px
+        text-transform: uppercase
+        color: #364844
+        padding: 53px 63px 0 63px
+        margin-bottom: 0
+    &-subtitle
+        display: block
+        font-family: 'PT Sans Caption'
+        font-style: normal
+        font-weight: 400
+        font-size: 22px
+        line-height: 28px
+        color: #364844
+    &-list
+        padding-left: 79px
+        margin-bottom: 0
+    &-item
+        font-family: 'PT Sans Caption'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 21px
+        color: #364844
+        margin-bottom: 8px
+    &-price
+        font-family: 'PT Sans Caption'
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 26px
+        color: #364844
+        padding-left: 63px
+        margin: 33px 0 26px 0
+    &-cross
+        font-family: 'PT Sans Caption'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        text-decoration-line: line-through
+        color: #868686
+        padding-left: 16px
+    &-btn
+        width: 196px
+        height: 43px
+        background-color: #0DBC91
+        border-radius: 50px
+        border: none
+        font-family: 'PT Sans Caption'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 21px
+        text-align: center
+        color: #FFFFFF
+        margin-left: 63px
+        margin-bottom: 56px
+        padding: 0
+        cursor: pointer
+    &-btns
+        display: flex
+        justify-content: center
+    &-start
+        font-family: 'PT Sans Caption'
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 23px
+        color: #364844
+    &-end
+        font-family: 'PT Sans Caption'
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 23px
+        color: #E1E1E1
+    &-link
+        width: 196px
+        height: 43px
+        border: 1px solid #0DBC91
+        box-sizing: border-box
+        border-radius: 50px
+        font-family: 'PT Sans Caption'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 21px
+        text-align: center
+        color: #0DBC91
+        margin-left: 14px
+        padding: 11px 59px
+        text-decoration: none
+        cursor: pointer
+    &-next,
+    &-prev
+        background-color: transparent
+        border: none
+        cursor: pointer
+li
+    &::marker
+        font-size: 1.1em
+        color: #1FA181
