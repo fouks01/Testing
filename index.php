@@ -18,6 +18,8 @@
     <script src="./js/modalMenu.js" defer></script>
     <script src="./js/slider.js" defer></script>
     <title>Clinic</title>
+    <?php require_once 'functions.php'; 
+    ?>
   </head>
   <body>
     <header class="mobile-fixed">
@@ -148,9 +150,16 @@
     <!-- /.main-->
     <section class="check">
       <div class="container">
+       
         <div class="check-block check-block--active">
+
+         <?php
+        $all = mysqli_query($connection, "SELECT * FROM `check-up` WHERE `ID` = 1");
+        $all = mysqli_fetch_all($all);
+        foreach ($all as $string){
+      ?>
           <h2 class="check-title">
-            Check-UP<span class="check-subtitle">для мужчин</span>
+            Check-UP<span class="check-subtitle"><?=$string[1]?></span>
           </h2>
           <ul class="check-list">
             <li class="check-item">Гормональный скрининг</li>
@@ -159,34 +168,27 @@
             <li class="check-item">Глобулин, связывающий половые гормоны</li>
           </ul>
           <h3 class="check-price">
-            Всего 2800₽<span class="check-cross">3500₽</span>
+            Всего <?=$string[3]?>₽<span class="check-cross"><?=$string[2]?>₽</span>
           </h3>
           <button class="check-btn">Записаться</button>
           <a class="check-link" href="#">Подробнее</a>
+           <?php
+      }
+      ?>
         </div>
+         
         <!-- /.check-block -->
 
+        
         <div class="check-block">
-          <h2 class="check-title">
-            Check-UP<span class="check-subtitle">для женщин</span>
-          </h2>
-          <ul class="check-list">
-            <li class="check-item">Гормональный скрининг</li>
-            <li class="check-item">Тестостерон</li>
-            <li class="check-item">Свободный тестостерон</li>
-            <li class="check-item">Глобулин, связывающий половые гормоны</li>
-          </ul>
-          <h3 class="check-price">
-            Всего 2800₽<span class="check-cross">3500₽</span>
-          </h3>
-          <button class="check-btn">Записаться</button>
-          <a class="check-link" href="#">Подробнее</a>
-        </div>
-        <!-- /.check-block -->
+          <?php
+        $all = mysqli_query($connection, "SELECT * FROM `check-up` WHERE `ID` = 2");
+        $all = mysqli_fetch_all($all);
+        foreach ($all as $string){
+        ?>
 
-        <div class="check-block">
           <h2 class="check-title">
-            Check-UP<span class="check-subtitle">для детей</span>
+            Check-UP<span class="check-subtitle"><?=$string[1]?></span>
           </h2>
           <ul class="check-list">
             <li class="check-item">Гормональный скрининг</li>
@@ -195,16 +197,27 @@
             <li class="check-item">Глобулин, связывающий половые гормоны</li>
           </ul>
           <h3 class="check-price">
-            Всего 2800₽<span class="check-cross">3500₽</span>
+            Всего <?=$string[3]?>₽<span class="check-cross"><?=$string[2]?>₽</span>
           </h3>
           <button class="check-btn">Записаться</button>
           <a class="check-link" href="#">Подробнее</a>
+          <?php
+      }
+      ?>
         </div>
         <!-- /.check-block -->
+        
 
+
+        
         <div class="check-block">
+          <?php
+        $all = mysqli_query($connection, "SELECT * FROM `check-up` WHERE `ID` = 3");
+        $all = mysqli_fetch_all($all);
+        foreach ($all as $string){
+        ?>
           <h2 class="check-title">
-            Check-UP<span class="check-subtitle">для кошек</span>
+            Check-UP<span class="check-subtitle"><?=$string[1]?></span>
           </h2>
           <ul class="check-list">
             <li class="check-item">Гормональный скрининг</li>
@@ -213,12 +226,46 @@
             <li class="check-item">Глобулин, связывающий половые гормоны</li>
           </ul>
           <h3 class="check-price">
-            Всего 2800₽<span class="check-cross">3500₽</span>
+            Всего <?=$string[3]?>₽<span class="check-cross"><?=$string[2]?>₽</span>
           </h3>
           <button class="check-btn">Записаться</button>
           <a class="check-link" href="#">Подробнее</a>
+          <?php
+      }
+      ?>
         </div>
         <!-- /.check-block -->
+        
+
+        
+        <div class="check-block">
+          <?php
+        $all = mysqli_query($connection, "SELECT * FROM `check-up` WHERE `ID` = 4");
+        $all = mysqli_fetch_all($all);
+        foreach ($all as $string){
+        ?>
+          <h2 class="check-title">
+            Check-UP<span class="check-subtitle"><?=$string[1]?></span>
+          </h2>
+          <ul class="check-list">
+            <li class="check-item">Гормональный скрининг</li>
+            <li class="check-item">Тестостерон</li>
+            <li class="check-item">Свободный тестостерон</li>
+            <li class="check-item">Глобулин, связывающий половые гормоны</li>
+          </ul>
+          <h3 class="check-price">
+            Всего <?=$string[3]?>₽<span class="check-cross"><?=$string[2]?>₽</span>
+          </h3>
+          <button class="check-btn">Записаться</button>
+          <a class="check-link" href="#">Подробнее</a>
+          <?php
+      }
+      ?>
+        </div>
+        <!-- /.check-block -->
+        
+
+
 
         <div class="check-btns">
           <button class="check-prev">
@@ -247,7 +294,7 @@
       <div class="container">
         <div class="footer-block">
           <div class="footer-logo">
-            <a href="index.html" class="logo-bottom"
+            <a href="#" class="logo-bottom"
               ><img
                 src="img/LOGO-footer.svg"
                 alt="Icon: Logo"
