@@ -1,7 +1,7 @@
 const modal = () => {
     const modal = document.querySelector('.popup');
     const buttons = document.querySelector('.appointment');
-    const buttonSecond = document.querySelector('.check-btn');
+    const buttonSecond = document.querySelectorAll('.check-btn');
     const modalBlock = modal.querySelector('.popup-content');
     const email = document.querySelectorAll('[type="email"]');
 
@@ -33,19 +33,24 @@ const modal = () => {
     });
 
 
+    buttonSecond.forEach((btn) => {
 
-    buttonSecond.addEventListener('click', () => {
-        if (screen.width > 767) {
-            modalAnimation();
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
+        btn.addEventListener('click', () => {
+            if (screen.width > 767) {
+                modalAnimation();
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
 
-        } else {
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
+            } else {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
 
-        }
+            }
+        });
+
     });
+
+
 
 
     modal.addEventListener('click', (e) => {
